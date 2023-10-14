@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pam.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.pam.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.pam.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_skill"
+        android:name="com.example.pam.SkillListFragment"
+        android:label="@string/menu_skill"
+        tools:layout="@layout/fragment_skill_list" >
+        <action
+            android:id="@+id/action_nak_skill_to_skill_detail"
+            app:destination="@id/nav_detail"
+            app:enterAnim="@anim/nav_default_enter_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.pam.DetailSkillFragment"
+        android:label="@string/menu_skillDetail"
+        tools:layout="@layout/fragment_detail_skill"
+        >
+        <argument
+            android:name="extra_name"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+
+</navigation>

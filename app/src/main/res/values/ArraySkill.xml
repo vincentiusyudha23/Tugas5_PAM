@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="string_array_skill">
+        <item>Kotlin</item>
+        <item>React</item>
+        <item>React Native</item>
+        <item>Pyhton</item>
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>JavaScript</item>
+        <item>Java</item>
+        <item>PHP</item>
+        <item>C++</item>
+    </string-array>
+</resources>
